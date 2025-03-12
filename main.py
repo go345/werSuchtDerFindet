@@ -24,7 +24,7 @@ def getQuestion():
 def compareResult():
     with open("data.csv", "r") as file:
         data = file.readlines()
-        return data[int(data[0])].split(";")[1] == 
+        return data[int(data[0])].split(";")[1] == True
 
 if __name__ == '__main__':
     app.run(debug=True)
