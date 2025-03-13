@@ -2,17 +2,28 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/> 
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
+        <div id="headline"><h1>Wer sucht der findet</h1></div>
         <div id="map" style="width: 600px; height: 600px;">
 
         </div>
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         <script src="./main.js"></script>
-        <div id="code">
-            <input type="text" name="" value="">
-            <input type="submit">
+        <div id="text"></div>
+        <div class="wrapper">
+            <input id="input" type="text" placeholder="Enter your email" />
+            <button onclick="button_press()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l14 0"></path>
+                    <path d="M13 18l6 -6"></path>
+                    <path d="M13 6l6 6"></path>
+                </svg>
+            </button>
         </div>
-
     </body>
 </html>
